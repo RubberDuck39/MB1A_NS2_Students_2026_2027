@@ -36,7 +36,37 @@ CX2_before<- 8123
 CX1_after <- 1432
 CX2_after <- 7543
 
-cell_id_1 <- CX1
-cell_id_2 <- CX2 
+cell_id_1 <- "CX1"
+cell_id_2 <- "CX2" 
+```
+
+```{r}
+library (tidyverse)
+library (gt)
+```
+```{r}
+cell_id_vec <- c(cell_id_1, cell_id_2)
+print(cell_id_vec)
+treated_vec <- c(CX1_treated, CX2_treated)
+print(treated_vec)
+before_vec <- c(CX1_before, CX2_before)
+print(before_vec)
+after_vec<- c(CX1_after, CX2_after)
+print(after_vec)
+```
+```{r}
+all_my_pets <- c("dog", "horse", "guinea pig", "chicken", "cat")
+pet_4<-print(all_my_pets[4])
+print(pet_4)
+```
+```{r}
+my_data_frame<- tibble(
+  cell_id <- c("CX1", "CX2"),
+  treated <- c(TRUE, FALSE),
+  num_cells_before <- c(5415, 8123),
+  num_cells_after <- c(1432, 7543)
+)
+
+gt(my_data_frame)
 ```
 
