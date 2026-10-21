@@ -1,0 +1,42 @@
+---
+title: "Prac1_exercises"
+author: "Faye Woodcock"
+---
+```{r}
+round(3.14159)
+round(3.14159, digits=2)
+```
+```{r}
+print(seq(1, 10, 2))
+```
+```{r}
+print(rep(5,7))
+print(rep(x=5, times=7))
+```
+```{r}
+x <- 3
+print(x)
+print(class(x))
+y<- "Potato"
+print(y)
+print(class(y))
+z <- FALSE 
+print(z)
+print(class(z))
+```
+
+
+```{r}
+CX1_treated <- TRUE 
+print(CX1_treated)
+CX2_treated <- FALSE
+print(CX2_treated)
+CX1_before <-5415
+CX2_before<- 8123 
+CX1_after <- 1432
+CX2_after <- 7543
+
+cell_id_1 <- CX1
+cell_id_2 <- CX2 
+```
+
