@@ -1,0 +1,23 @@
+---
+title: "hpa_quarto"
+author: "Faye Woodcock"
+---
+Using information from a brain summary table, I will show the number of genes which are catagorised as regionally elevated in the **forebrain** this includes the cerebral cortex, basal ganglia, thalamus and hypothalamus. 
+```{r}
+Human_number<- sum(180,83,57,110)
+print(paste("Humans have, in the forebrain,", Human_number, "elevated genes."))
+```
+```{r}
+Pig_number<- sum(109,157,31,45)
+print(paste("Pigs have, in the forebrain,", Pig_number, "elevated genes."))
+```
+
+```{r}
+Mouse_number <- sum(55,185,60,98)
+print(paste("Mice have, in the forebrain,", Mouse_number, "elevated genes."))
+```
+Therefore, 
+Humans have the highest number of genes with regionally elevated expression. 
+
+```
+
