@@ -1,0 +1,25 @@
+---
+title: "Practical_1_Introduction_to_R/ukhsa_data_analysis.qmd"
+---
+
+```{r}
+library(tidyverse)
+library(gt)
+
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+gt(head(rhinovirus))
+```
+
+
+```{r}
+ggplot(rhinovirus, aes(
+  x = date, 
+  y = metric_value
+)) +
+geom_line( colour = "blue")+
+xlab("date") +
+ylab("disease (no. of cases)")+
+ggtitle("respiratory disease number by date")
+
+```
+
